@@ -1,0 +1,12 @@
+<%- include('header') %>
+
+<div class="dashboard" id="login">
+  <h1>Welcome to the Dashboard</h1>
+  <h5><%=locals.user ? user : "User" %></h5>
+  <p>This is a simple dashboard page.</p>
+  <form id="logoutForm" action="/logout" method="get">
+    <button type="submit" id="logoutBtn">Sign out</button>
+  </form>
+</div>
+
+<%- include('footer') %>
